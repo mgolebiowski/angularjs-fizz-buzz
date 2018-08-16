@@ -1,5 +1,5 @@
 <div class="list-component">
   <ul>
-    <li ng-repeat="val in $ctrl.vList">{{ val }}</li>
+    <li ng-repeat="val in $ctrl.vList track by $index">{{ val }}</li>
   </ul>
 </div>
