@@ -1,14 +1,20 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="fizzBuzz">
   <head>
     <meta charset="utf-8">
     <title>Angular FizzBuzz!</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
     <script src="node_modules/angular/angular.js"></script>
+    <script src="src/fizzBuzz.js"></script>
+    <script src="src/MainController.js"></script>
+    <script src="src/list.js"></script>
   </head>
   <body>
-
-    <p>Nothing here {{'yet' + '!'}}</p>
-
+    <div class="container">
+      <h1 class="text-center">Angular FizzBuzz!</h1>
+      <div id="app" ng-controller="MainController as vm">
+        <list hero="vm.shero"></list>
+      </div>
+    </div>
   </body>
 </html>

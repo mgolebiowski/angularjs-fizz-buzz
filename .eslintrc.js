@@ -1,15 +1,22 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+      },
+    "globals": {
+      "angular": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended", "plugin:angular/johnpapa"],
     "parserOptions": {
-        "ecmaVersion": 5
+        "ecmaVersion": 6
     },
     "rules": {
         "indent": [
             "error",
             4
+        ],
+        "indent": [
+          "error",
+          2
         ],
         "linebreak-style": [
             "error",
