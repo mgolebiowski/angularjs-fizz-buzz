@@ -4,6 +4,6 @@ angular.module("fizzBuzz").component("fizzForm", {
     num1: "=",
     num2: "=",
     max: "=",
-    fnc: "="
+    onUpdate: "&"
   }
 });

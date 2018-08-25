@@ -8,14 +8,14 @@
     <script src="src/fizzBuzz.js"></script>
     <script src="src/MainController.js"></script>
     <script src="src/fizzForm.js"></script>
-    <script src="src/list.js"></script>
+    <script src="src/fizzList.js"></script>
   </head>
   <body>
     <div class="container">
       <h1 class="text-center">Angular FizzBuzz!</h1>
       <div id="app" ng-controller="MainController as vm">
-        <fizz-form  fnc="vm.fizzBuzzCalc" num1="vm.num1" num2="vm.num2" max="vm.max"></fizz-form>
-        <list v-list="vm.vList"></list>
+        <fizz-form on-update="vm.fizzBuzzCalc()" num1="vm.num1" num2="vm.num2" max="vm.max"></fizz-form>
+        <fizz-list v-list="vm.vList"></fizz-list>
       </div>
     </div>
   </body>
